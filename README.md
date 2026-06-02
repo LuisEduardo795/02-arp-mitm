@@ -14,6 +14,18 @@ Realizar un ataque ARP Spoofing bidireccional para interceptar,
 leer y potencialmente modificar todo el tráfico entre la víctima
 y el gateway.
 
+### Parámetros
+
+| Parámetro | Descripción | Default |
+|-----------|-------------|---------|
+| `-i` | Interfaz de red (ej: eth0) | Obligatorio |
+| `-v` | IP de la víctima | Obligatorio |
+| `-g` | IP del gateway | Obligatorio |
+| `-t` | Intervalo de reenvío ARP (seg) | 2.0 |
+| `-s` | Capturar tráfico interceptado | False |
+| `-o` | Archivo de salida PCAP | captura_mitm.pcap |
+
+
 ### Requisitos
 - Sistema operativo: Kali Linux / Ubuntu
 - Python 3.8+
