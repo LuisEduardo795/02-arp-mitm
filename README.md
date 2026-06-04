@@ -32,6 +32,15 @@ y el gateway.
 - Scapy: `pip3 install scapy`
 - Privilegios root
 
+## Topologia de red
+<img width="512" height="356" alt="image" src="https://github.com/user-attachments/assets/d1368c9d-9307-4ca1-b260-40b8935e4a2d" />
+
+| Dispositivo | Interfaz | IP |
+|---|---|---|
+| Ubuntu-Atacante | ens3 | 192.168.67.50/24 |
+| SW-Core | e0/0 - e0/1 | — |
+| Linux-Victima | ens3 | 192.168.67.60/24 |
+
 ## Funcionamiento del Script
 
 1. Resuelve la MAC real de la víctima y el gateway mediante ARP
