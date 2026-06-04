@@ -18,7 +18,7 @@ y el gateway.
 
 | Parámetro | Descripción | Default |
 |-----------|-------------|---------|
-| `-i` | Interfaz de red (ej: eth0) | Obligatorio |
+| `-i` | Interfaz de red (ej: ens3) | Obligatorio |
 | `-v` | IP de la víctima | Obligatorio |
 | `-g` | IP del gateway | Obligatorio |
 | `-t` | Intervalo de reenvío ARP (seg) | 2.0 |
@@ -45,13 +45,13 @@ y el gateway.
 
 ```bash
 # Ataque básico
-sudo python3 arp_mitm.py -i eth0 -v 192.168.67.60 -g 192.168.67.1
+sudo python3 arp_mitm.py -i ens3 -v 192.168.67.60 -g 192.168.67.1
 
 # Con captura de tráfico
-sudo python3 arp_mitm.py -i eth0 -v 192.168.67.60 -g 192.168.67.1 -s -o trafico.pcap
+sudo python3 arp_mitm.py -i ens3 -v 192.168.67.60 -g 192.168.67.1 -s -o trafico.pcap
 
 # Con intervalo de reenvío personalizado
-sudo python3 arp_mitm.py -i eth0 -v 192.168.67.60 -g 192.168.67.1 -t 1.0
+sudo python3 arp_mitm.py -i ens3 -v 192.168.67.60 -g 192.168.67.1 -t 1.0
 ```
 
 ### Verificar el ataque desde la víctima
