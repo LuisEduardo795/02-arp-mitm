@@ -104,3 +104,5 @@ arp -a
 show ip arp inspection
 show ip arp inspection statistics
 ```
+## Video demostrativo 
+https://youtu.be/X6bmyiCtz58
